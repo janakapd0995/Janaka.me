@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Janaka Dissanayake — Quality & Technical Leader</title>
+  <meta name="description" content="Senior apparel Quality & Technical leader. Adidas/Nike/REI/Lacoste experience. Lean, CTQ, QMS, and digitalization." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14;/* deep slate */
+      --card:#121924;/* section surface */
+      --accent:#00d4ff;/* cyan */
+      --accent-2:#8b5cf6;/* violet */
+      --text:#e6edf3;/* primary text */
+      --muted:#91a1b3;/* secondary text */
+      --ok:#22c55e; --warn:#f59e0b; --bad:#ef4444;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0f1622 40%, #0d1220);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;scroll-behavior:smooth}
+    img{max-width:100%;display:block}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,15,20,.75);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+    .nav a{margin:0 10px;color:var(--muted)}
+    .nav a:hover{color:var(--text)}
+    .nav .menu{display:flex;align-items:center}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#031018;padding:10px 16px;border-radius:999px;font-weight:700;box-shadow:var(--shadow)}
+    .btn:hover{filter:brightness(1.05)}
+
+    /* hero */
+    .hero{padding:60px 0 30px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:8px 12px;border-radius:999px;color:var(--muted)}
+    .title{font-size:44px;line-height:1.1;margin:14px 0 10px;font-weight:800}
+    .subtitle{color:var(--muted);font-size:18px}
+    .hero-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .kpi{font-size:28px;font-weight:800}
+    .kpi small{font-size:12px;color:var(--muted);font-weight:600}
+    .avatar{border-radius:20px;border:1px solid rgba(255,255,255,.1);overflow:hidden}
+    .avatar img{aspect-ratio:4/5;object-fit:cover}
+
+    section{padding:60px 0 20px}
+    h2{font-size:28px;margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+    .span-4{grid-column:span 4}
+    .span-8{grid-column:span 8}
+    .panel{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    .list{display:grid;gap:12px}
+    .tag{display:inline-block;padding:4px 10px;border:1px solid rgba(255,255,255,.15);border-radius:999px;color:var(--muted);margin:4px 6px 0 0}
+
+    /* timeline */
+    .item{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:start}
+    .item .when{color:var(--muted);font-size:12px;margin-top:6px}
+    .item .what{font-weight:700}
+
+    /* projects */
+    .project{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
+    .project+.project{margin-top:16px}
+    .project .shot{border-radius:14px;border:1px solid rgba(255,255,255,.08);overflow:hidden}
+
+    /* contact */
+    form{display:grid;gap:12px}
+    input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:var(--text)}
+    input::placeholder,textarea::placeholder{color:#9fb0c3}
+
+    footer{padding:30px 0;color:var(--muted);text-align:center}
+
+    /* responsive */
+    @media (max-width: 920px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero-cards{grid-template-columns:repeat(3,1fr)}
+      .grid{grid-template-columns:1fr}
+      .span-4,.span-8{grid-column:1}
+      .project{grid-template-columns:1fr}
+    }
+    @media (max-width: 520px){
+      .title{font-size:32px}
+      .hero-cards{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> <span>Janaka Dissanayake</span></div>
+      <nav class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#talks">Talks & Training</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">Quality Excellence • Apparel • Lean/CTQ • QMS</div>
+          <h1 class="title">Senior Quality & Technical Leader for Global Apparel Brands</h1>
+          <p class="subtitle">25+ years elevating factory performance across Asia. Specialist in <strong>CTQ/CTP</strong>, <strong>Right‑First‑Time</strong>, <strong>digital dashboards</strong>, and <strong>buyer audits</strong> (Adidas, Nike, Lacoste, REI, Under Armour).</p>
+          <div class="hero-cards">
+            <div class="card">
+              <div class="kpi">98.7% <small>RFT</small></div>
+              <div class="muted">sustained on Adidas lines</div>
+            </div>
+            <div class="card">
+              <div class="kpi">6 / 6 <small>POs</small></div>
+              <div class="muted">SGS finals passed this week</div>
+            </div>
+            <div class="card">
+              <div class="kpi">-42% <small>defects</small></div>
+              <div class="muted">via Image Line + QCO</div>
+            </div>
+          </div>
+        </div>
+        <div class="avatar">
+          <!-- Replace src with your image -->
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop" alt="Portrait of Janaka"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container grid">
+        <div class="span-4"><h2>About</h2></div>
+        <div class="span-8 panel">
+          <p>I'm <strong>Janaka Dissanayake</strong>, a Quality & Technical leader focused on building robust upstream and downstream quality systems. I translate buyer expectations into shop‑floor standards through <strong>CTQ/CTP frameworks</strong>, <strong>operator OPL</strong>, <strong>First Output Meetings</strong>, and <strong>real‑time dashboards</strong>.</p>
+          <p>Based in Thailand; previously in Vietnam and Sri Lanka. MSc (Manchester), MBA (St David). I mentor teams to standardize, digitalize, and scale quality excellence.</p>
+          <div>
+            <span class="tag">CTQ/CTP</span>
+            <span class="tag">QMS</span>
+            <span class="tag">Lean/Kaizen</span>
+            <span class="tag">AQL & Buyer Audits</span>
+            <span class="tag">Digital Dashboards</span>
+            <span class="tag">Training & SOPs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container grid">
+        <div class="span-4"><h2>Experience</h2></div>
+        <div class="span-8 panel">
+          <div class="list">
+            <div class="item">
+              <div>
+                <div class="what">Assistant Divisional Manager – Quality Excellence (Adidas)</div>
+                <div class="when">2025 — Present • Thailand</div>
+              </div>
+              <div>Leading quality system standardization for Adidas lines (G3/G1), implementing Image Line QCO, CFA → SGS correlation, and CTQ digitization.</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="what">Head of Quality & Technical</div>
+                <div class="when">2019 — 2025 • Vietnam</div>
+              </div>
+              <div>Drove factory‑wide RFT uplift with 4M‑based input controls, inline process audits, and endline 100% inspections on CTQ lots.</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="what">Operations & QA Leadership (Multiple Brands)</div>
+                <div class="when">2000 — 2019 • Sri Lanka & Asia</div>
+              </div>
+              <div>Led cross‑functional teams across underwear, sportswear, seam‑sealed outerwear, woven bottoms, blazers; embedded SOPs and PP/RA rigor.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / CASES -->
+    <section id="projects">
+      <div class="container grid">
+        <div class="span-4"><h2>Projects</h2></div>
+        <div class="span-8 panel">
+          <div class="project">
+            <div>
+              <h3>Image Line + QCO</h3>
+              <p>Full pre‑line setup with advance operator training and jumper team coverage. Achieved faster Day‑1 ramp‑up and fewer first‑week defects.</p>
+              <div class="tag">Ramp-up</div> <div class="tag">Training</div> <div class="tag">RFT</div>
+            </div>
+            <div class="shot">
+              <img alt="Project Image" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"/>
+            </div>
+          </div>
+          <div class="project">
+            <div>
+              <h3>CTQ Digitization</h3>
+              <p>Tablet‑based real‑time defect logging mapped to Sales Orders with CTQ mockups; auto KPIs for CFA, inline, and endline.</p>
+              <div class="tag">Digital</div> <div class="tag">CTQ</div> <div class="tag">Analytics</div>
+            </div>
+            <div class="shot">
+              <img alt="Dashboard" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TALKS & TRAINING -->
+    <section id="talks">
+      <div class="container grid">
+        <div class="span-4"><h2>Talks & Training</h2></div>
+        <div class="span-8 panel">
+          <ul>
+            <li>20‑Point QC Training — inline/endline mastery</li>
+            <li>Needle Control SOP — risk, traceability, audits</li>
+            <li>QMS Activity Plan — Plan vs Actual weekly governance</li>
+            <li>Buyer RA/PP Meeting Best Practices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container grid">
+        <div class="span-4"><h2>Contact</h2></div>
+        <div class="span-8 panel">
+          <p>Want to collaborate, book a training, or discuss quality strategy? Send a message:</p>
+          <!-- Replace the action with your Formspree endpoint when ready -->
+          <form action="https://formspree.io/f/your-id" method="POST">
+            <input name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+          <p style="margin-top:8px;color:var(--muted)">Or email: <a href="mailto:janaka@example.com">janaka@example.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Janaka Dissanayake • Built with love and discipline.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
