@@ -1,301 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Janaka Dissanayake — Quality & Technical Leader</title>
-  <meta name="description" content="Senior apparel Quality & Technical leader. Adidas/Nike/REI/Lacoste experience. Lean, CTQ, QMS, and digitalization." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0b0f14;/* deep slate */
-      --card:#121924;/* section surface */
-      --accent:#00d4ff;/* cyan */
-      --accent-2:#8b5cf6;/* violet */
-      --text:#e6edf3;/* primary text */
-      --muted:#91a1b3;/* secondary text */
-      --ok:#22c55e; --warn:#f59e0b; --bad:#ef4444;
-      --radius:18px;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0f1622 40%, #0d1220);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;scroll-behavior:smooth}
-    img{max-width:100%;display:block}
-    a{color:var(--accent);text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;z-index:50;background:rgba(11,15,20,.75);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-    .brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
-    .nav a{margin:0 10px;color:var(--muted)}
-    .nav a:hover{color:var(--text)}
-    .nav .menu{display:flex;align-items:center}
-    .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#031018;padding:10px 16px;border-radius:999px;font-weight:700;box-shadow:var(--shadow)}
-    .btn:hover{filter:brightness(1.05)}
-
-    /* hero */
-    .hero{padding:60px 0 30px}
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
-    .badge{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:8px 12px;border-radius:999px;color:var(--muted)}
-    .title{font-size:44px;line-height:1.1;margin:14px 0 10px;font-weight:800}
-    .subtitle{color:var(--muted);font-size:18px}
-    .hero-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
-    .kpi{font-size:28px;font-weight:800}
-    .kpi small{font-size:12px;color:var(--muted);font-weight:600}
-    .avatar{border-radius:20px;border:1px solid rgba(255,255,255,.1);overflow:hidden}
-    .avatar img{aspect-ratio:4/5;object-fit:cover}
-
-    section{padding:60px 0 20px}
-    h2{font-size:28px;margin:0 0 18px}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
-    .span-4{grid-column:span 4}
-    .span-8{grid-column:span 8}
-    .panel{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
-    .list{display:grid;gap:12px}
-    .tag{display:inline-block;padding:4px 10px;border:1px solid rgba(255,255,255,.15);border-radius:999px;color:var(--muted);margin:4px 6px 0 0}
-
-    /* timeline */
-    .item{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:start}
-    .item .when{color:var(--muted);font-size:12px;margin-top:6px}
-    .item .what{font-weight:700}
-
-    /* projects */
-    .project{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
-    .project+.project{margin-top:16px}
-    .project .shot{border-radius:14px;border:1px solid rgba(255,255,255,.08);overflow:hidden}
-
-    /* contact */
-    form{display:grid;gap:12px}
-    input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:var(--text)}
-    input::placeholder,textarea::placeholder{color:#9fb0c3}
-
-    footer{padding:30px 0;color:var(--muted);text-align:center}
-
-    /* responsive */
-    @media (max-width: 920px){
-      .hero-grid{grid-template-columns:1fr}
-      .hero-cards{grid-template-columns:repeat(3,1fr)}
-      .grid{grid-template-columns:1fr}
-      .span-4,.span-8{grid-column:1}
-      .project{grid-template-columns:1fr}
-    }
-    @media (max-width: 520px){
-      .title{font-size:32px}
-      .hero-cards{grid-template-columns:1fr 1fr}
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Janaka Dissanayake — Garment Manufacturing Expert</title>
+<meta name="description" content="Garment Manufacturing Expert | 20+ Years in Operations, Quality, Technical, Planning & Supply Chain | Driving Innovation for Global Apparel Brands" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;font-family:'Inter',sans-serif;background:#0b0f14;color:#e6edf3;line-height:1.6}
+  a{color:#00d4ff;text-decoration:none}
+  header{position:sticky;top:0;background:rgba(11,15,20,0.8);backdrop-filter:blur(10px);padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.1)}
+  .container{max-width:1100px;margin:auto;padding:0 20px}
+  nav a{margin:0 10px;color:#91a1b3}
+  nav a:hover{color:#e6edf3}
+  .btn{background:linear-gradient(135deg,#00d4ff,#8b5cf6);padding:10px 18px;border-radius:999px;color:#031018;font-weight:700}
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:60px 20px}
+  .hero img{width:100%;border-radius:20px;border:1px solid rgba(255,255,255,0.1)}
+  h1{font-size:36px;font-weight:800;line-height:1.2}
+  h2{font-size:28px;margin-top:60px;margin-bottom:20px}
+  .cardgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
+  .card{background:rgba(255,255,255,0.05);padding:20px;border-radius:18px;border:1px solid rgba(255,255,255,0.08);text-align:center}
+  .kpi{font-size:28px;font-weight:800}
+  section{padding:40px 20px}
+  .project{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:40px;align-items:center}
+  .project img{width:100%;border-radius:14px}
+  footer{text-align:center;padding:30px;color:#91a1b3;font-size:14px}
+  @media(max-width:900px){.hero{grid-template-columns:1fr}.project{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand"><span class="dot"></span> <span>Janaka Dissanayake</span></div>
-      <nav class="menu" id="menu">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#talks">Talks & Training</a>
-        <a href="#contact">Contact</a>
-        <a href="https://www.linkedin.com/in/janaka-dissanayake-11505150/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="#contact">Get in touch</a>
-      </nav>
+<header>
+  <div class="container">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/janaka-dissanayake-11505150/" target="_blank">LinkedIn</a>
+      <a class="btn" href="#contact">Get in Touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <div>
+    <h1>Garment Manufacturing Expert | 20+ Years in Operations, Quality, Technical, Planning & Supply Chain | Driving Innovation for Global Apparel Brands</h1>
+    <p>Delivering end-to-end excellence for Adidas, Nike, Lacoste, REI, Under Armour, and more. Specialized in <strong>CTQ/CTP deployment</strong>, <strong>Lean manufacturing</strong>, <strong>Image Line (QCO)</strong>, <strong>digital transformation</strong>, and <strong>QMS standardization</strong>.</p>
+    <div class="cardgrid">
+      <div class="card"><div class="kpi">+18%<br><small>RFT Improvement</small></div><p>from data-driven QA dashboards</p></div>
+      <div class="card"><div class="kpi">-17%<br><small>Stain Defects</small></div><p>via White/Light Color Zones</p></div>
+      <div class="card"><div class="kpi">100%<br><small>Audit Pass</small></div><p>0 critical findings (Adidas/Nike)</p></div>
     </div>
-  </header>
+  </div>
+  <div><img src="./assets/janaka.jpg" alt="Janaka Dissanayake portrait"/></div>
+</section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="badge">Quality Excellence • Apparel • Lean/CTQ • QMS</div>
-          <h1 class="title">Garment Manufacturing Expert&nbsp;| 20+ Years in Operations, Quality, Technical, Planning &amp; Supply Chain&nbsp;| Driving Innovation for Global Apparel Brands</h1>
-          <p class="subtitle">Delivering end‑to‑end factory excellence across Asia for Adidas, Nike, Lacoste, REI, Under Armour, and more. Specialized in <strong>QMS</strong>, <strong>CTQ/CTP deployment</strong>, <strong>Image Line (QCO)</strong>, <strong>Lean/Kaizen</strong>, and <strong>digital dashboards</strong>.</p>
-          <div class="hero-cards">
-            <div class="card">
-              <div class="kpi">+32% <small>Day‑1 efficiency</small></div>
-              <div class="muted">from Image Line (QCO) rollout</div>
-            </div>
-            <div class="card">
-              <div class="kpi">‑17% <small>stain defects</small></div>
-              <div class="muted">via White/Light Color Zones</div>
-            </div>
-            <div class="card">
-              <div class="kpi">100% <small>final pass</small></div>
-              <div class="muted">for key buyer (program specific)</div>
-            </div>
-          </div>
-        </div>
-        <div class="avatar">
-          <!-- Replace src with your image in /assets/ -->
-          <img src="./assets/janaka.jpg" alt="Portrait of Janaka"/>
-        </div>
-      </div>
-    </section>
+<section id="about" class="container">
+  <h2>About</h2>
+  <p>Dynamic and results-driven Quality and Technical Leader with 25+ years in apparel manufacturing across Asia. Recognized for strategic innovation, Lean transformation, and technical excellence. MSc in Operations Management (University of Manchester) and MBA from Saint David University.</p>
+  <p>Expertise includes QMS deployment, process audits, efficiency improvement, and building global-standard quality systems. Strong communicator and mentor, passionate about developing next-generation quality leaders.</p>
+</section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container grid">
-        <div class="span-4"><h2>About</h2></div>
-        <div class="span-8 panel">
-          <p>I'm <strong>Janaka Dissanayake</strong>, a Quality & Technical leader focused on building robust upstream and downstream quality systems. I translate buyer expectations into shop‑floor standards through <strong>CTQ/CTP frameworks</strong>, <strong>operator OPL</strong>, <strong>First Output Meetings</strong>, and <strong>real‑time dashboards</strong>.</p>
-          <p>Based in Thailand; previously in Vietnam and Sri Lanka. MSc (Manchester), MBA (St David). I mentor teams to standardize, digitalize, and scale quality excellence.</p>
-          <div>
-            <span class="tag">CTQ/CTP</span>
-            <span class="tag">QMS</span>
-            <span class="tag">Lean/Kaizen</span>
-            <span class="tag">AQL & Buyer Audits</span>
-            <span class="tag">Digital Dashboards</span>
-            <span class="tag">Training & SOPs</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="experience" class="container">
+  <h2>Professional Experience</h2>
+  <ul>
+    <li><strong>Head of Quality Assurance — Fashion Garments Vietnam (2019–2023)</strong><br>Improved RFT by 18%, reduced repeat defects by 15%, and earned 4-year Platinum Supplier recognition from American Eagle. Passed 8 major client audits with zero findings.【87:3†Janaka Dissanayake - PRofile.pdf†L16-L26】</li>
+    <li><strong>Head of Quality Assurance — Poongin Vina (2018–2019)</strong><br>Achieved Self-Inspection Certifications for Ann Taylor, J.Jill, and WHBM, reducing external audit dependency.【87:3†Janaka Dissanayake - PRofile.pdf†L43-L45】</li>
+    <li><strong>Head of Quality & Technical — Brandix Intimate Apparel (2009–2012)</strong><br>98%+ first-time audit pass rate; DIFOT 100%; established pre-production SOPs and inline defect mapping.【87:2†Janaka Dissanayake - PRofile.pdf†L38-L52】</li>
+    <li><strong>Group Operations & Systems Manager — Hela Clothing (2012–2014)</strong><br>Implemented Lean systems, reduced manufacturing cost per unit by 17%, and introduced digital QA templates cutting audit prep time by 30%.【87:2†Janaka Dissanayake - PRofile.pdf†L1-L30】</li>
+  </ul>
+</section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <div class="container grid">
-        <div class="span-4"><h2>Experience</h2></div>
-        <div class="span-8 panel">
-          <div class="list">
-            <div class="item">
-              <div>
-                <div class="what">Assistant Divisional Manager – Quality Excellence (Adidas)</div>
-                <div class="when">2025 — Present • Thailand</div>
-              </div>
-              <div>Leading quality system standardization for Adidas lines (G3/G1), implementing Image Line QCO, CFA → SGS correlation, and CTQ digitization.</div>
-            </div>
-            <div class="item">
-              <div>
-                <div class="what">Head of Quality & Technical</div>
-                <div class="when">2019 — 2025 • Vietnam</div>
-              </div>
-              <div>Drove factory‑wide RFT uplift with 4M‑based input controls, inline process audits, and endline 100% inspections on CTQ lots.</div>
-            </div>
-            <div class="item">
-              <div>
-                <div class="what">Operations & QA Leadership (Multiple Brands)</div>
-                <div class="when">2000 — 2019 • Sri Lanka & Asia</div>
-              </div>
-              <div>Led cross‑functional teams across underwear, sportswear, seam‑sealed outerwear, woven bottoms, blazers; embedded SOPs and PP/RA rigor.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="projects" class="container">
+  <h2>Key Projects & Innovations</h2>
+  <div class="project">
+    <div><h3>Image Line (QCO)</h3><p>Developed pre-line setup and operator skill-up program for high SMV garments, achieving +32% Day‑1 efficiency and fewer startup defects.【87:4†Janaka Dissanayake - PRofile.pdf†L13-L23】</p></div>
+    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80" alt="Image Line"/>
+  </div>
+  <div class="project">
+    <div><h3>White/Light Color Zones</h3><p>Implemented color‑specific handling zones with SOPs and visual IDs, cutting stain defects by 17%.【87:4†Janaka Dissanayake - PRofile.pdf†L1-L12】</p></div>
+    <img src="https://images.unsplash.com/photo-1581091014534-8987c1d2d1b1?q=80" alt="White Color Zone"/>
+  </div>
+  <div class="project">
+    <div><h3>Quality Data Digitalization</h3><p>Introduced Power BI dashboards for real-time defect capture and analysis, enabling proactive quality control.【87:4†Janaka Dissanayake - PRofile.pdf†L38-L48】</p></div>
+    <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80" alt="Dashboard"/>
+  </div>
+  <div class="project">
+    <div><h3>Material Flow & Zero Dead Rejects</h3><p>Digitized material tracking and launched recovery systems for washed garments, achieving 0% dead rejects.【87:4†Janaka Dissanayake - PRofile.pdf†L51-L65】</p></div>
+    <img src="https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?q=80" alt="Material Flow"/>
+  </div>
+  <div class="project">
+    <div><h3>Value Stream Mapping</h3><p>Redesigned production flow, improving process efficiency by 20% and optimizing layout and WIP levels.【87:4†Janaka Dissanayake - PRofile.pdf†L68-L75】</p></div>
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80" alt="VSM"/>
+  </div>
+</section>
 
-    <!-- PROJECTS / CASES -->
-    <section id="projects">
-      <div class="container grid">
-        <div class="span-4"><h2>Projects & Impact</h2></div>
-        <div class="span-8 panel">
-          <div class="project">
-            <div>
-              <h3>Image Line + QCO</h3>
-              <p>Designed a pre‑line setup and training program for high‑SMV styles to accelerate startup learning and stabilize quality from Day‑1.</p>
-              <div class="tag">+32% Day‑1 efficiency</div> <div class="tag">SMV sensitive</div> <div class="tag">Ramp‑up</div>
-            </div>
-            <div class="shot">
-              <img alt="Image Line" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"/>
-            </div>
-          </div>
+<section id="brands" class="container">
+  <h2>Brand Portfolio</h2>
+  <p>Extensive experience manufacturing for global brands across multiple product categories:</p>
+  <p><strong>Adidas, Nike, REI, Under Armour, Lacoste, Levi’s, Tommy Hilfiger, Calvin Klein, Victoria’s Secret, Gap, Uniqlo, H&M, American Eagle, Patagonia, Puma, Lululemon, Diesel, Banana Republic, Ann Taylor, Amazon, Columbia Sportswear</strong> and others.【87:1†Janaka Dissanayake - PRofile.pdf†L174-L207】</p>
+</section>
 
-          <div class="project">
-            <div>
-              <h3>White/Light Color Zones</h3>
-              <p>Introduced color‑managed areas with SOPs, visual IDs, and weekly audits to prevent stains and handling risks on light garments.</p>
-              <div class="tag">‑17% stains</div> <div class="tag">SOP</div> <div class="tag">Audit</div>
-            </div>
-            <div class="shot">
-              <img alt="Quality Zone" src="https://images.unsplash.com/photo-1581091014534-8987c1d2d1b1?q=80&w=1200&auto=format&fit=crop"/>
-            </div>
-          </div>
+<section id="training" class="container">
+  <h2>Trainings & Certifications</h2>
+  <ul>
+    <li>Lean Manufacturing & Waste Elimination</li>
+    <li>Needle Application & Defect Prevention – Schmetz ME FZE</li>
+    <li>Leadership & Communication – MAS Linea Intimo</li>
+    <li>Outward Bound Leadership – Ella Adventure Park</li>
+    <li>Legal Framework of Employee Relationship – Sri Lanka Labor Dept</li>
+  </ul>
+</section>
 
-          <div class="project">
-            <div>
-              <h3>Quality Data Digitization</h3>
-              <p>Shifted to tablet + dashboard workflows (Power BI) for inline/endline defect logging, enabling faster RCA and proactive CAPA.</p>
-              <div class="tag">Digital</div> <div class="tag">CTQ</div> <div class="tag">Analytics</div>
-            </div>
-            <div class="shot">
-              <img alt="Dashboard" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop"/>
-            </div>
-          </div>
+<section id="contact" class="container">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:janakapd@gmail.com">janakapd@gmail.com</a><br>
+  LinkedIn: <a href="https://www.linkedin.com/in/janaka-dissanayake-11505150/" target="_blank">linkedin.com/in/janaka-dissanayake-11505150</a></p>
+  <p><img alt="QR" width="140" height="140" style="border-radius:12px;border:1px solid rgba(255,255,255,.12)" src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjanaka-dissanayake-11505150%2F"/></p>
+</section>
 
-          <div class="project">
-            <div>
-              <h3>Material Flow & Zero Dead Rejects</h3>
-              <p>Built a digital material‑tracking system and special task forces on washed garments to convert defects to good stock.</p>
-              <div class="tag">Material flow</div> <div class="tag">0% dead rejects</div>
-            </div>
-            <div class="shot">
-              <img alt="Material Flow" src="https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?q=80&w=1200&auto=format&fit=crop"/>
-            </div>
-          </div>
-
-          <div class="project">
-            <div>
-              <h3>Value Stream Mapping</h3>
-              <p>Redesigned production flow end‑to‑end to eliminate non‑value activities and reduce lead time.</p>
-              <div class="tag">VSM</div> <div class="tag">Flow</div>
-            </div>
-            <div class="shot">
-              <img alt="VSM" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TALKS & TRAINING -->
-    <section id="talks">
-      <div class="container grid">
-        <div class="span-4"><h2>Talks & Training</h2></div>
-        <div class="span-8 panel">
-          <ul>
-            <li>20‑Point QC Training — inline/endline mastery</li>
-            <li>Needle Control SOP — risk, traceability, audits</li>
-            <li>QMS Activity Plan — Plan vs Actual weekly governance</li>
-            <li>Buyer RA/PP Meeting Best Practices</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="container grid">
-        <div class="span-4"><h2>Contact</h2></div>
-        <div class="span-8 panel">
-          <p>Want to collaborate, book a training, or discuss quality strategy? Send a message:</p>
-          <form action="https://formspree.io/f/your-id" method="POST">
-            <input name="name" placeholder="Your name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
-            <button class="btn" type="submit">Send message</button>
-          </form>
-          <p style="margin-top:10px;color:var(--muted)">
-            Email: <a href="mailto:janakapd@gmail.com">janakapd@gmail.com</a> • 
-            LinkedIn: <a href="https://www.linkedin.com/in/janaka-dissanayake-11505150/" target="_blank" rel="noopener">View profile</a>
-          </p>
-          <div style="display:flex;align-items:center;gap:16px;margin-top:12px">
-            <div>
-              <div style="font-weight:700;margin-bottom:6px">Quick connect (QR)</div>
-              <img alt="QR to contact" width="140" height="140" style="border-radius:12px;border:1px solid rgba(255,255,255,.12)" src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjanaka-dissanayake-11505150%2F"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">© <span id="year"></span> Janaka Dissanayake • Built with love and discipline.</div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<footer>© <script>document.write(new Date().getFullYear())</script> Janaka Dissanayake • Built with passion and precision.</footer>
 </body>
 </html>
